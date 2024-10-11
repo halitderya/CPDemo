@@ -1,0 +1,23 @@
+.mainlayout {
+  width: 1580px;
+  height: 720px;
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+}
+.video-container {
+  border-radius: 10px;
+  height: 720px;
+  width: 1280px;
+}
+
+.ribbon-container {
+  height: 720px;
+  width: 300px;
+}
+.onapproach-container {
+  position: relative;
+  width: 1280px;
+  height: 720px;
+  border: 2px dashed red;
+}

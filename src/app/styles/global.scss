@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+@import "header";
+@import "footer";
+@import "components";
+@import "layout";
+body {
+  font-family: sans-serif;
+}
+div {
+  // border-style: dotted;
+  // border-width: 1px;
+  // border-color: red;
+}
+h1 {
+  font-size: 72px;
+}
+h3 {
+  font-size: 32px;
+}

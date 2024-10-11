@@ -1,0 +1,28 @@
+// _ribbon.scss
+
+.ribbon {
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+.ribbon--idle {
+  background-color: $forest-500;
+}
+
+.ribbon--occupied {
+  background-color: $sunrise-300;
+}
+
+.ribbon--faulty {
+  background-color: $shell-red;
+}
+.fault-page {
+  background-color: $shell-red;
+  height: 720px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

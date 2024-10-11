@@ -1,0 +1,35 @@
+          <BatteryGauge
+            value={percentage}
+            animated={true}
+            customization={{
+              batteryBody: {
+                strokeWidth: 2,
+                cornerRadius: 5,
+                fill: "#eee",
+                strokeColor: "#000",
+              },
+              batteryCap: {
+                fill: "#000",
+                strokeWidth: 2,
+                strokeColor: "#000",
+              },
+              batteryMeter: {
+                noOfCells: 10,
+                lowBatteryValue: 15,
+                lowBatteryFill: "#ff0000",
+                fill: "#008557", //
+                gradFill: [
+                  {
+                    color: "#ffcc00",
+                    offset: chargeAnimation / 100,
+                  },
+                ],
+              },
+              readingText: {
+                lightContrastColor: "#fff",
+                darkContrastColor: "#000",
+                fontFamily: "Arial",
+                fontSize: 12,
+              },
+            }}
+          />
