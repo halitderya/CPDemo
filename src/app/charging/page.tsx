@@ -1,6 +1,5 @@
 "use client";
-
-import React from "react";
+import React, { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Ribbon from "../components/ribbon";
 import AutoCycleImageGallery from "../components/ad";
@@ -20,4 +19,10 @@ const ChargingPage: React.FC = () => {
   );
 };
 
-export default ChargingPage;
+const ChargingPageWithSuspense = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <ChargingPage />
+  </Suspense>
+);
+
+export default ChargingPageWithSuspense;
